@@ -7,7 +7,7 @@ struct Stack* initialize(){
     struct Stack *stackPtr = malloc(sizeof(struct Stack));
     if(stackPtr == NULL)
         return NULL;
-        
+
     // we dont need to initialize the first element of the array as we dont care about the garbage values
     stackPtr -> top = -1;
 }
@@ -42,4 +42,25 @@ int pop(struct Stack *stackPtr){
         return -1;
 
     return stackPtr -> data[stackPtr -> top--];
+}
+
+int size(struct Stack *stackPtr){
+    return stackPtr -> top;
+}
+
+void display(struct Stack *stackPtr){
+    int topMost = stackPtr -> top;
+
+    printf("Elements in the stack:\n");
+
+    while(1){
+        if(topMost == -1)
+            break;
+        printf("%d\n", stackPtr -> data[topMost--]);
+
+    }
+}
+
+void clear(struct Stack *stackPtr){
+    stackPtr -> top = -1;
 }

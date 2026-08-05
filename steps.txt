@@ -97,3 +97,9 @@ src/
 
 examples/
     linked_list_demo.c ← "Here's how to use the linked list."
+
+
+
+git add .
+git commit -m "Your commit message"
+git push

@@ -19,4 +19,10 @@ int isEmpty(struct Stack *stack);
 
 int isFull(struct Stack *stack);
 
+void clear(struct Stack *stackPtr);
+
+void display(struct Stack *stackPtr);
+
+int size(struct Stack *stackPtr);
+
 # endif
