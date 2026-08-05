@@ -1,0 +1,99 @@
+Step 1: Design the API
+Before writing any code, decide what operations your linked list should support.
+
+Create list
+Destroy list
+
+Insert
+    Front
+    Back
+    At Position
+
+Delete
+    Front
+    Back
+    At Position
+
+Search
+
+Display
+
+Length
+
+Reverse
+
+Is Empty
+
+This is exactly how software engineers think: design first, implement second.
+
+Step 2: Create the header
+In include/linked_list.h, you'll eventually declare:
+
+the node structure,
+
+the list structure (if you use one),
+
+and the function prototypes.
+
+No implementations go in the header.
+
+Step 3: Implement one function at a time
+Don't try to write the whole linked list in one sitting.
+
+A good progression is:
+
+Create a node
+
+Insert at front
+
+Print the list
+
+Free the list
+
+Insert at back
+
+Search
+
+Delete
+
+Reverse
+
+After each function:
+
+Compile.
+
+Test it in examples/linked_list_demo.c.
+
+Commit your changes.
+
+
+HEADER GUARD
+
+#include
+    ↓
+Open the file
+
+#ifndef
+    ↓
+Already processed?
+
+No
+    ↓
+#define
+    ↓
+Mark it as processed
+    ↓
+Read the file
+    ↓
+#endif
+
+
+
+include/
+    linked_list.h   ← "A linked list provides these functions."
+
+src/
+    linked_list.c   ← "Here is how those functions actually work."
+
+examples/
+    linked_list_demo.c ← "Here's how to use the linked list."
