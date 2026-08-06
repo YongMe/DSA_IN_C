@@ -24,3 +24,48 @@ A C library implementing fundamental data structures from scratch.
 - [ ] Hash Table
 - [ ] Graph
 - [ ] Trie
+
+
+### ✅ Stack (Array Implementation)
+
+#### Operations
+
+- Initialize
+- Push
+- Pop
+- Peek
+- Display
+- Size
+- Clear
+- isEmpty
+- isFull
+
+#### Time Complexity
+
+| Operation | Complexity |
+|----------|------------|
+| Push | O(1) |
+| Pop | O(1) |
+| Peek | O(1) |
+| Size | O(1) |
+| Display | O(n) |
+| isEmpty | O(1) |
+| isFull | O(1) |
+| Clear | O(1) |
+
+#### Features
+
+- Fixed-size array implementation
+- Modular implementation using header and source files
+- Interactive demo program
+- Handles stack overflow and underflow
+
+
+#### Concepts Learned
+
+- Header files and source file organization
+- Header guards
+- Passing structures by pointer
+- Dynamic memory allocation
+- Stack overflow and underflow
+- Time complexity analysis
