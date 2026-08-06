@@ -1,6 +1,6 @@
 # include <stdio.h> 
 # include <stdlib.h>
-# include "stack.h"
+# include "..\include\stack.h"
 
 struct Stack* initialize(){
     
@@ -45,7 +45,7 @@ int pop(struct Stack *stackPtr){
 }
 
 int size(struct Stack *stackPtr){
-    return stackPtr -> top;
+    return stackPtr -> top + 1;
 }
 
 void display(struct Stack *stackPtr){
