@@ -56,9 +56,10 @@ void display(struct Stack *stackPtr){
     while(1){
         if(topMost == -1)
             break;
-        printf("%d\n", stackPtr -> data[topMost--]);
+        printf("%d ", stackPtr -> data[topMost--]);
 
     }
+    printf("\n");
 }
 
 void clear(struct Stack *stackPtr){

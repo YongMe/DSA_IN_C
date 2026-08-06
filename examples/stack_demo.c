@@ -36,6 +36,9 @@ int main(){
         printf("Popped element: %d\n", popped);
     }
 
+    free(stackPtr);
+    stackPtr = NULL;
+
     return 0;
 
 }
