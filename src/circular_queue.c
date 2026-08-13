@@ -3,6 +3,14 @@
 # include "..\include\circular_queue.h"
 
 
+struct CircularQueue{
+    int *data;
+    int front;
+    int rear;
+    int capacity;
+};
+
+
 struct CircularQueue* initialize(int size_queue){
 
     struct CircularQueue *queue = malloc(sizeof(struct CircularQueue));
@@ -41,7 +49,7 @@ void enqueue(struct CircularQueue *queue, int num){
     if(isEmpty(queue))
         queue -> front = queue -> rear = 0;
     else if(isFull(queue)){
-        printf("Queue Overflow!!");
+        printf("Queue Overflow!!\n");
         return;
     }
     else

@@ -3,14 +3,9 @@
 
 
 
-struct CircularQueue{
-    int *data;
-    int front;
-    int rear;
-    int capacity;
-};
+struct CircularQueue;
 
-struct CircularQueue* initialize();
+struct CircularQueue* initialize(int size_queue);
 
 int isEmpty(struct CircularQueue *queue);
 
@@ -26,7 +21,7 @@ void display(struct CircularQueue *queue);
 
 int size(struct CircularQueue *queue);
 
-void clear(struct Circular *queue);
+void clear(struct CircularQueue *queue);
 
 
 # endif
